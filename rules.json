@@ -1,0 +1,60 @@
+[
+  {
+    "name" : "Ситилинк",
+    "input_file" : "input/citilink.json",
+    "output_file" : "output/citilink.json",
+    "rules" :
+      [
+        {
+          "name" : "Модель",
+          "tag" : "h1",
+          "class" : "ProductHeader__title",
+          "type" : "str"
+        },
+        {
+          "name" : "Цена",
+          "tag" : "span",
+          "class" : "ProductHeader__price-default_current-price",
+          "type" : "int"
+        },
+        {
+          "name" : "Старая цена",
+          "tag" : "span",
+          "class" : "ProductHeader__price-old_current-price",
+          "type" : "int"
+        }
+      ]
+  },
+  {
+    "name" : "Корпорация Центр",
+    "input_file" : "input/kcentr.json",
+    "output_file" : "output/kcentr.json",
+    "rules" :
+      [
+        {
+          "name" : "Модель",
+          "tag" : "h1",
+          "class" : "cardTitle",
+          "type" : "str"
+        },
+        {
+          "name" : "Цена",
+          "tag" : "div",
+          "class" : "cardOrder-priceCurrent",
+          "type" : "int"
+        },
+        {
+          "name" : "Промо цена",
+          "tag" : "div",
+          "class" : "promo-price__num",
+          "type" : "int"
+        },
+        {
+          "name" : "Старая цена",
+          "tag" : "div",
+          "class" : "cardOrder-priceOld",
+          "type" : "int"
+        }
+      ]
+  }
+]
